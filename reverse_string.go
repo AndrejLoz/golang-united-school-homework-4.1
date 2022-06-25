@@ -5,9 +5,11 @@ package reverse_string
 // Consider that the string may have international symbols, emojis and consist of several lines
 
 func ReverseString(input string) (output string) {
+	runes := []rune(input)
 
-	for i := len(input) - 1; i >= 0; i-- {
-		output += string(input[i])
+	for i := len(runes) - 1; i >= 0; i-- {
+
+		output += string(runes[i])
 	}
 
 	return output
